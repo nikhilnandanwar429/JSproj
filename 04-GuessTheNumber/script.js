@@ -5,16 +5,16 @@ const lowOrHi = document.querySelector('.lowOrHi');
 const rem = document.querySelector('.lastResult');
 
 const tergetNumber = parseInt(Math.floor(Math.random() * 100));
-console.log(tergetNumber);
+// console.log(tergetNumber);
 
 let num,remGuess = 0;
 
 submit.addEventListener('click' , (e) => {
     e.preventDefault();
-    const va = finalNumber.value;
+    const val = finalNumber.value;
     finalNumber.value = '';
-    // console.log(va);
-    validateGuess(va);
+    // console.log(val);
+    validateGuess(val);
 });
 
 const validateGuess = function(guess){
